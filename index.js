@@ -5,7 +5,8 @@ const port = 3000;
 
 app.get("/health-check",(req,res) => {
     res.send({
-	status: "working fine"
+	status: "working fine",
+	msg: "dont worry"
     })
 })
 
