@@ -11,14 +11,13 @@ app.get("/health-check",(req,res) => {
     })
 })
 
-app.post("/add", (req,res) => {
-    const {a, b} = req.body
-    const sum = function add(a,b){
-	return a+b
-    }
-    
-    res.send({sum})
-})
+app.post("/add", (req, res) => {
+    const { a, b } = req.body;
+
+    const sum = a + b;
+
+    res.send({ sum });
+});
 
 app.listen(port, () => {
     console.log(`server running on port: ${port}`)
