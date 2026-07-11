@@ -7,7 +7,7 @@ app.use(express.json());
 app.get("/health-check",(req,res) => {
     res.send({
 	status: "working fine",
-	msg: "dont worry => with github actions , change new 3"
+	msg: "dont worry => with github actions , change new 4"
     })
 })
 
